@@ -1,0 +1,93 @@
+:root {
+  --primaryPink: #fb2e86;
+  --primaryGreen: #08d15f;
+  --primaryFontFamilyLato: "lato";
+  --primaryFontFamilyJosefin: "Josefin Sans";
+}
+.btn {
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  font-family: var(--primaryFontFamilyLato);
+  border-radius: 2px;
+  outline: none;
+}
+
+.fooshi {
+  background-color: var(--primaryPink);
+}
+.green {
+  background-color: var(--primaryGreen);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*مسؤول عن انه يفرغ مساحة عن الاطراف، 
+and using margin make them in the center*/
+.container {
+  width: calc(100% - 320px);
+  margin: auto;
+}
+
+body {
+  font-family: var(--primaryFontFamilyLato);
+}
+.header {
+  padding: 57px 0;
+}
+/*ulيجيب النافباراللي جوا ال
+  على خط مستقيم جنب بعض مع مسافات بينهم وفوقهم وباستخدام   flex-wrap: wrap;
+بلتزموا بال
+width الخاص فيهم*/
+.header ul {
+  display: flex;
+  gap: 36px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.header .txt {
+  border: none;
+  outline: none;
+}
+/*عملت حدود مناسبة للinput & button*/
+.search {
+  border: 1px solid #e7e6ef;
+  border-radius: 2px;
+}
+/*صح انا عندي بار بس ما بدي استخدمه حاليا ولا بدي اظهرو!*/
+.header .bar {
+  display: none;
+  outline: none;
+}
+@media screen and (max-width: 1082px) {
+  .list,
+  .search {
+    display: none;
+  }
+  .header .bar {
+    display: block;
+    width: 30px;
+  }
+}
+.list a{
+    color: #0D0E43;
+}
+.list-item .active {
+    color: #fb2e86;
+}
+/*  input & button تعديلات ال */
+.search button{
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    background-color: var(--primaryPink);
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 200px;
+    padding-left: 5px;
+}
