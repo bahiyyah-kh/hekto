@@ -19,10 +19,20 @@
 .green {
   background-color: var(--primaryGreen);
 }
+.white{
+    color: white;
+}
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.gray{
+    color: #8A8FB9;
+}
+.fontsize-16{
+    font-family: var(--primaryFontFamilyLato);
+    font-size: 16px;
 }
 /*مسؤول عن انه يفرغ مساحة عن الاطراف، 
 and using margin make them in the center*/
@@ -48,21 +58,21 @@ width الخاص فيهم*/
   flex-wrap: wrap;
 }
 
-.header .txt {
+.header  {
   border: none;
   outline: none;
 }
 /*عملت حدود مناسبة للinput & button*/
 .search {
   border: 1px solid #e7e6ef;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 /*صح انا عندي بار بس ما بدي استخدمه حاليا ولا بدي اظهرو!*/
 .header .bar {
   display: none;
   outline: none;
 }
-@media screen and (max-width: 1082px) {
+@media screen and (max-width: 1140px) {
   .list,
   .search {
     display: none;
@@ -91,3 +101,43 @@ width الخاص فيهم*/
     width: 200px;
     padding-left: 5px;
 }
+/*  end of header  */
+
+/*  start of footer  */
+.footer{
+    background-color: #EEEFFB;
+    font-size: 16px;
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.flex-direction{
+    flex-direction: column;
+}
+.footer .left-side{
+    gap: 23px;
+    align-items: flex-start;
+}
+address{
+    color:#8A8FB9;
+    font-size: 16px;
+    font-family: var(--primaryFontFamilyLato);
+}
+.footer-item ul li a{
+    font-family: var(--primaryFontFamilyLato);
+    color: #8A8FB9;
+    font-size: 16px;
+    display: flex;
+    padding-bottom: 23px;
+}
+.footer-item h2{
+    padding-bottom: 46px;
+    font-size: 22px;
+    font-family: var(--primaryFontFamilyLato);
+}
+
+.right-side .row{
+    gap: 60px;
+}
+/*  end of footer  */
