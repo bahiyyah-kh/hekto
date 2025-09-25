@@ -158,7 +158,9 @@ width الخاص فيهم*/
   justify-content: space-between;
 }
 .left-ch {
-  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 .footer .left-side {
   gap: 30px;
@@ -181,12 +183,12 @@ address {
   display: flex;
   padding-bottom: 23px;
 }
-.footer-item h2 {
+.right-side .footer-item h2 {
   padding-bottom: 46px;
   font-size: 22px;
   font-family: var(--primaryFontFamilyLato);
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1170px) {
   .container {
     width: calc(100% - 200px);
   }
