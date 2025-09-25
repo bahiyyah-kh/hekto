@@ -106,6 +106,28 @@ width الخاص فيهم*/
 
 /*  end of header  */
 
+/*  start of newslater  */
+.newslater{
+  background-image: url(./../img/newslater/Rectangle\ 102.png);
+  background-position: center center;
+  padding: 155px 0;
+  text-align: center;
+}
+.contant{
+  color: #151875;
+  font-family: var(--primaryFontFamilyJosefin);
+}
+.contant h2{
+  padding-bottom: 28px;
+  font-size: 35px;
+}
+.width-173{
+  width: 173px;
+}
+.height-49{
+  height: 49px;
+}
+/*  end newslater  */
 /*  start Clients  */
 
 .clients .row {
