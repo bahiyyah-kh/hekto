@@ -148,23 +148,26 @@ width الخاص فيهم*/
 .d-flex {
   display: flex;
 }
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
 .flex-direction {
   flex-direction: column;
 }
-.ju-space-between{
+.ju-space-between {
   justify-content: space-between;
 }
+.left-ch {
+  width: fit-content;
+}
 .footer .left-side {
-  gap: 23px;
+  gap: 30px;
   align-items: flex-start;
-
+  width: 40%;
 }
 .footer .right-side {
   gap: 30px;
-  width: calc((100% - 30px) / 2);
+  width: 60%;
 }
 address {
   color: #8a8fb9;
@@ -182,6 +185,30 @@ address {
   padding-bottom: 46px;
   font-size: 22px;
   font-family: var(--primaryFontFamilyLato);
+}
+@media screen and (max-width: 1070px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+  .footer .left-side,
+  .footer .right-side {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: calc(100% - 70px);
+  }
+}
+@media screen and (max-width: 520px) {
+  .container {
+    width: calc(100% - 40px);
+  }
 }
 
 /*  end of footer  */
