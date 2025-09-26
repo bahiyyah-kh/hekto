@@ -104,6 +104,55 @@ width الخاص فيهم*/
 
 /*  end of header  */
 
+/*  start hero  */
+.hero{
+  background-color: #F2F0FF;
+  padding: 50px 0;
+}
+.hero-content{
+  position: relative;
+  gap: 40px;
+}
+.color_fooshi{
+  color: #FB2E86;
+}
+.color-gray{
+  color: #8A8FB9;
+}
+.lampa-image{
+  position: absolute;
+  top: -50px;
+  left: -102px;
+  flex: 1 0 20%;
+}
+.the-content{
+  flex: 1 0 40%;
+  padding-left: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-image{
+  flex: 1 0 30%;
+}
+.hero-image img{
+  width: 100%;
+  border: 1px;
+}
+.lampa-image img{
+  width: 60%;
+}
+.the-content p{
+  color: black;
+  font-family: var(--primaryFontFamilyJosefin);
+  font-size: 40px;
+}
+
+
+
+/*  end hero  */
+
 /*  start Featured Products  */
 .featured-products{
   padding: 50px 0;
