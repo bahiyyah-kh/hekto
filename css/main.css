@@ -31,10 +31,7 @@
 .gray {
   color: #8a8fb9;
 }
-.fontsize-16 {
-  font-family: var(--primaryFontFamilyLato);
-  font-size: 16px;
-}
+
 /*مسؤول عن انه يفرغ مساحة عن الاطراف، 
 and using margin make them in the center*/
 .container {
@@ -44,6 +41,7 @@ and using margin make them in the center*/
 
 body {
   font-family: var(--primaryFontFamilyLato);
+  font-size: 16px;
 }
 .header {
   padding: 57px 0;
@@ -106,28 +104,104 @@ width الخاص فيهم*/
 
 /*  end of header  */
 
+/*  start Featured Products  */
+.featured-products{
+  padding: 50px 0;
+}
+.featured-products h2{
+  color: #0d0e43;
+  font-family: var(--primaryFontFamilyJosefin);
+  padding-bottom: 30px;
+}
+.product-details h3{
+  color: var(--primaryPink);
+}
+.text-center {
+  text-align: center;
+}
+.featured-products .row{
+  justify-content: flex-start;
+  gap: 15px;
+}
+.featured-products .products{
+  box-shadow: 0px 0px 25px 0px #0000001A;
+  flex: 1 0 220px;
+  border-radius: 4px;
+}
+.products .img{
+  background-color : #F6F7FB;
+  padding: 30px;
+}
+.products img{
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  transition: all .6s;
+}
+.color{
+  width: 14px;
+  height: 4px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.color1{
+  background-color: #05E6B7;
+}
+.color2{
+  background-color: #F701A8;
+}
+.color3{
+  background-color: #00009D;
+}
+.product-info span{
+  color: #151875;
+}
+.products:hover .product-details{
+  background-color: #2F1AC4;
+}
+.products:hover h3,
+.products:hover .color-options .color,
+.products:hover .product-info span{
+  transition: all .6;
+}
+ .products:hover .product-details h3{
+  color: #FFFFFF;
+}
+.products:hover  span{
+  color: #FFFFFF;
+  border-radius: 1px;
+}
+.products:hover .color-options .color3{
+  background-color: #FFEAC1;
+}
+/*  start Featured Products  */
+
 /*  start of newslater  */
-.newslater{
+.newslater {
   background-image: url(./../img/newslater/Rectangle\ 102.png);
   background-position: center center;
   padding: 155px 0;
   text-align: center;
 }
-.contant{
+.contant {
   color: #151875;
   font-family: var(--primaryFontFamilyJosefin);
 }
-.contant h2{
+.contant h2 {
   padding-bottom: 28px;
   font-size: 35px;
 }
-.width-173{
-  width: 173px;
-}
-.height-49{
-  height: 49px;
-}
+
 /*  end newslater  */
+
 /*  start Clients  */
 
 .clients .row {
@@ -166,6 +240,7 @@ width الخاص فيهم*/
 /*  start of footer  */
 .footer {
   background-color: #eeeffb;
+  padding: 80px 0;
 }
 .d-flex {
   display: flex;
@@ -178,6 +253,9 @@ width الخاص فيهم*/
 }
 .ju-space-between {
   justify-content: space-between;
+}
+.gap-12{
+  gap: 12px;
 }
 .left-ch {
   display: flex;
