@@ -152,7 +152,9 @@ width الخاص فيهم*/
 
 
 /*  end hero  */
-
+.flex-direction-col{
+  flex-direction: column;
+}
 /*  start Featured Products  */
 .featured-products{
   padding: 50px 0;
@@ -231,7 +233,45 @@ width الخاص فيهم*/
 .products:hover .color-options .color3{
   background-color: #FFEAC1;
 }
-/*  start Featured Products  */
+/* بدي اضيف الicons */
+.reduced-btn{
+  border: none;
+  color: white;
+  font-family: var(--primaryFontFamilyLato);
+  font-size: 10px;
+  border-radius: 2px;
+  outline: none;
+  width: 94px;
+  height: 29px;
+  padding: 8px 13px;
+}
+.products{
+  position: relative;
+}
+.featured-icons img{
+  width: 10%;
+}
+.shopping{
+  display: none;
+}
+.shopping-botton{
+  display: none;
+}
+
+.products:hover .shopping {
+  position: absolute;
+  display: flex;
+  top: -65px;
+  left: 13px;
+}
+.products:hover .shopping-botton {
+  position: absolute;
+  display: flex;
+  top: 199px;
+  left: 77px;
+}
+
+/*  end Featured Products  */
 
 /*  start of newslater  */
 .newslater {
