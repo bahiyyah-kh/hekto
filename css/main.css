@@ -12,7 +12,21 @@
   border-radius: 2px;
   outline: none;
 }
-
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-direction-col{
+  flex-direction: column;
+}
+.ju-space-between {
+  justify-content: space-between;
+}
+.gap-12{
+  gap: 12px;
+}
 .fooshi {
   background-color: var(--primaryPink);
 }
@@ -30,6 +44,15 @@
 }
 .gray {
   color: #8a8fb9;
+}
+.text-center {
+  text-align: center;
+}
+.color_fooshi{
+  color: #FB2E86;
+}
+.color-gray{
+  color: #8A8FB9;
 }
 
 /*مسؤول عن انه يفرغ مساحة عن الاطراف، 
@@ -113,12 +136,7 @@ width الخاص فيهم*/
   position: relative;
   gap: 40px;
 }
-.color_fooshi{
-  color: #FB2E86;
-}
-.color-gray{
-  color: #8A8FB9;
-}
+
 .lampa-image{
   position: absolute;
   top: -50px;
@@ -152,9 +170,7 @@ width الخاص فيهم*/
 
 
 /*  end hero  */
-.flex-direction-col{
-  flex-direction: column;
-}
+
 /*  start Featured Products  */
 .featured-products{
   padding: 50px 0;
@@ -163,13 +179,12 @@ width الخاص فيهم*/
   color: #0d0e43;
   font-family: var(--primaryFontFamilyJosefin);
   padding-bottom: 30px;
+   font-size: 40px;
 }
 .product-details h3{
   color: var(--primaryPink);
 }
-.text-center {
-  text-align: center;
-}
+
 .featured-products .row{
   justify-content: flex-start;
   gap: 15px;
@@ -223,7 +238,7 @@ width الخاص فيهم*/
 .products:hover .product-info span{
   transition: all .6;
 }
- .products:hover .product-details h3{
+.products:hover .product-details h3{
   color: #FFFFFF;
 }
 .products:hover  span{
@@ -273,6 +288,61 @@ width الخاص فيهم*/
 
 /*  end Featured Products  */
 
+
+/*  start latest products  */
+.latest-products{
+  padding: 50px 0;
+}
+.latest-products h2{
+  color: #0d0e43;
+  font-family: var(--primaryFontFamilyJosefin);
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.what-do-u-need a{
+  color: #151875;
+  font-family: var(--primaryFontFamilyLato);
+}
+.New-Arrival:hover,.Best-Seller:hover,.Featured:hover,.Special-Offer:hover {
+  cursor: pointer;
+  color: #FB2E86;
+  border-bottom: 1px solid #FB2E86;
+}
+.what-do-u-need {
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+
+
+.first-line-chair,
+.sec-line-chair{
+  gap: 20px;
+}
+.chair{
+  flex: 1 0 350px;
+  padding: 10px;
+}
+.chair .chair-image{
+  padding: 20px;
+  background-color: #EEEFFB;
+}
+.chair .chair-details{
+  background-color: white;
+  padding: 20px;
+}
+.chair .chair-image .sailed{
+  background-color: white;
+}
+.latest-products img{
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+
+/*  end latest products  */
 /*  start of newslater  */
 .newslater {
   background-image: url(./../img/newslater/Rectangle\ 102.png);
@@ -331,21 +401,7 @@ width الخاص فيهم*/
   background-color: #eeeffb;
   padding: 80px 0;
 }
-.d-flex {
-  display: flex;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.flex-direction {
-  flex-direction: column;
-}
-.ju-space-between {
-  justify-content: space-between;
-}
-.gap-12{
-  gap: 12px;
-}
+
 .left-ch {
   display: flex;
   flex-wrap: wrap;
