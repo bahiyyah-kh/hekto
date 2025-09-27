@@ -12,6 +12,15 @@
   border-radius: 2px;
   outline: none;
 }
+h2{
+  color: #0d0e43;
+  font-family: var(--primaryFontFamilyJosefin);
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+ span{
+  color: #151875;
+}
 .d-flex {
   display: flex;
 }
@@ -54,6 +63,7 @@
 .color-gray{
   color: #8A8FB9;
 }
+
 
 /*مسؤول عن انه يفرغ مساحة عن الاطراف، 
 and using margin make them in the center*/
@@ -227,9 +237,6 @@ width الخاص فيهم*/
 .color3{
   background-color: #00009D;
 }
-.product-info span{
-  color: #151875;
-}
 .products:hover .product-details{
   background-color: #2F1AC4;
 }
@@ -293,12 +300,6 @@ width الخاص فيهم*/
 .latest-products{
   padding: 50px 0;
 }
-.latest-products h2{
-  color: #0d0e43;
-  font-family: var(--primaryFontFamilyJosefin);
-  padding-bottom: 30px;
-  font-size: 40px;
-}
 .what-do-u-need a{
   color: #151875;
   font-family: var(--primaryFontFamilyLato);
@@ -319,7 +320,7 @@ width الخاص فيهم*/
 
 .first-line-chair,
 .sec-line-chair{
-  gap: 20px;
+  gap: 10px;
 }
 .chair{
   flex: 1 0 350px;
@@ -331,17 +332,60 @@ width الخاص فيهم*/
 }
 .chair .chair-details{
   background-color: white;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--primaryFontFamilyJosefin);
+  font-size: 12px;
 }
-.chair .chair-image .sailed{
-  background-color: white;
+.oid-price{
+  color: red;
 }
-.latest-products img{
+.latest-products .chair-image img{
   width: 220px;
   height: 220px;
   object-fit: contain;
 }
 
+
+
+.chair{
+  position: relative;
+}
+.badge-sale{
+  display: none;
+}
+.shopping {
+  display: none;
+}
+.badge-sale img{
+  border: none;
+  outline: none;
+}
+.chair .shopping img{
+  width: 40%;
+}
+.chair:hover .badge-sale {
+  position: absolute;
+  display: flex;
+  top: 14px;
+  left: 20px;
+}
+.chair:hover .shopping {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 95px;
+  left: 18px;
+  
+}
+
+.chair:hover .chair-image img{
+  border: 1px solid #000000;
+}
+.chair:hover .chair-image {
+  background-color: white;
+}
 /*  end latest products  */
 /*  start of newslater  */
 .newslater {
@@ -428,7 +472,7 @@ address {
   display: flex;
   padding-bottom: 23px;
 }
-.right-side .footer-item h2 {
+.right-side .footer-item h3 {
   padding-bottom: 46px;
   font-size: 22px;
   font-family: var(--primaryFontFamilyLato);
