@@ -185,12 +185,6 @@ width الخاص فيهم*/
 .featured-products{
   padding: 60px 0;
 }
-.featured-products h2{
-  color: #0d0e43;
-  font-family: var(--primaryFontFamilyJosefin);
-  padding-bottom: 30px;
-   font-size: 40px;
-}
 .product-details h3{
   color: var(--primaryPink);
 }
@@ -300,6 +294,10 @@ width الخاص فيهم*/
 .latest-products{
   padding: 50px 0;
 }
+.latest-products .row{
+  justify-content: flex-start;
+  gap: 10px;
+}
 .what-do-u-need a{
   color: #151875;
   font-family: var(--primaryFontFamilyLato);
@@ -318,12 +316,9 @@ width الخاص فيهم*/
 
 
 
-.first-line-chair,
-.sec-line-chair{
-  gap: 10px;
-}
+
 .chair{
-  flex: 1 0 350px;
+  flex: 1 0 170px;
   padding: 10px;
 }
 .chair .chair-image{
@@ -338,12 +333,12 @@ width الخاص فيهم*/
   font-family: var(--primaryFontFamilyJosefin);
   font-size: 12px;
 }
-.oid-price{
+.latest-products .old-price{
   color: red;
 }
 .latest-products .chair-image img{
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -415,6 +410,61 @@ width الخاص فيهم*/
   font-size: 15px;
 }
 /* end What Shopex Offer!  */
+  
+
+/*  start Trending Products  */
+.trending-products{
+  padding-bottom: 120px;
+}
+.trending-products-chair{
+  box-shadow: 0px 8px 40px 0px #31208A0D;
+  flex: 1 0 200px;
+    padding: 12px 0;
+
+}
+.trending-products .row{
+  gap: 20px;
+  border-radius: 4px;
+}
+.trending-products img{
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+.trending-products .trending-products-image img{
+  background-color: #F5F6F8;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.trending-products-details{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.chair-name{
+  padding: 10px 0;
+
+}
+.chair-name h4{
+  font-family: var(--primaryFontFamilyLato);
+  color: #151875;
+}
+.chair-price span{
+  font-family: var(--primaryFontFamilyLato);
+  color: #151875;
+}
+.trending-products-details .old-price{
+  color: #1518754D;
+}
+.trending-products .chair-price{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+/*  end Trending Products  */
+
 
 /*  start of newslater  */
 .newslater {
