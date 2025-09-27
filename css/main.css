@@ -183,7 +183,7 @@ width الخاص فيهم*/
 
 /*  start Featured Products  */
 .featured-products{
-  padding: 50px 0;
+  padding: 60px 0;
 }
 .featured-products h2{
   color: #0d0e43;
@@ -387,6 +387,35 @@ width الخاص فيهم*/
   background-color: white;
 }
 /*  end latest products  */
+
+/* start What Shopex Offer!  */
+.what-shopex-offer{
+  padding: 50px 0;
+}
+.supports{
+  padding-bottom: 70px;
+  display: flex;
+  gap: 40px;
+}
+.support{
+  box-shadow: 0px 8px 40px 0px #31208A0D;
+  padding: 70px 20px;
+}
+.support img{
+  padding-bottom: 20px;
+}
+.support h3{
+  color: #151875;
+  font-family: var(--primaryFontFamilyJosefin);
+  padding-bottom: 15px;
+}
+.support h5{
+  color: #1A0B5B4D;
+  font-family: var(--primaryFontFamilyLato);
+  font-size: 15px;
+}
+/* end What Shopex Offer!  */
+
 /*  start of newslater  */
 .newslater {
   background-image: url(./../img/newslater/Rectangle\ 102.png);
