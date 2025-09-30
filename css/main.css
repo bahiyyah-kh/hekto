@@ -481,12 +481,16 @@ width الخاص فيهم*/
 /*   start Top Categories    */
 .top-categories{
   padding: 100px 0;
+
 }
 .top-categories-chair{
   position: relative;
   width: 200px;
-  text-align: center;
-  gap: 20px;
+}
+.top-categories .row{
+  justify-content: center;
+    gap: 20px;
+
 }
 .top-categories-chair .graycircle {
   width: 250px;
@@ -645,10 +649,16 @@ address {
   .footer .right-side {
     width: 100%;
   }
+  .footer .left-side .left-ch img{
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 900px) {
   .container {
     width: calc(100% - 100px);
+  }
+  .footer .left-side .left-ch img{
+    padding: 20px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -658,8 +668,15 @@ address {
 }
 @media screen and (max-width: 520px) {
   .container {
-    width: calc(100% - 40px);
+    width: calc(100% - 10px);
+  }
+  .footer .left-side .left-ch img{
+    padding: 20px;
   }
 }
-
+@media screen and (max-width: 520px) {
+  .container {
+    width: calc(100%);
+  }
+}
 /*  end of footer  */
